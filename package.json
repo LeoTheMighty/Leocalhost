@@ -1,0 +1,19 @@
+{
+  "name": "Leocalhost",
+  "version": "1.0.0",
+  "description": "To perform local tasks for me",
+  "main": "index.js",
+  "author": "Leo Belyi",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+      "start": "node server.js",
+      "build": "source setup.sh && cd client && yarn install && yarn build"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "engines": {
+      "node": "17.5.0"
+  }
+}
