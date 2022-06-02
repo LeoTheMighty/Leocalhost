@@ -12,7 +12,7 @@ function App() {
       const b = [];
       for (let i = 0; i < pallets.length; i++) {
         b.push(
-          <button onClick={() => fetch(`upload?param=${pallets[i]}`)}>
+          <button type="button" className="pallet-button" onClick={() => fetch(`upload?param=${pallets[i]}`)}>
             { pallets[i] }
           </button>
         );
@@ -24,8 +24,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div style={{ display: 'flex' }}>
-        { buttons }
+        <div className="pallet-container">
+            { buttons }
         </div>
       </header>
     </div>
